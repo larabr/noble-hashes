@@ -8,7 +8,8 @@
     "/*.d.ts",
     "/*.js.map",
     "esm",
-    "src"
+    "src",
+    "declarations"
   ],
   "scripts": {
     "bench": "node test/benchmark/index.js noble",
