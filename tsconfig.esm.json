@@ -4,17 +4,12 @@
         "outDir": "esm",
         "target": "es2020",
         "module": "es6",
-        "moduleResolution": "node",
+        "moduleResolution": "nodenext",
         "sourceMap": true,
         "inlineSources": false,
         "noUnusedLocals": true,
         "baseUrl": ".",
-        "declaration": true,
-        "declarationDir": "declarations",
-        "allowSyntheticDefaultImports": true,
-        "paths": {
-            "@noble/hashes/crypto": [ "src/crypto" ]
-        },
+        "declaration": true
     },
     "include": ["src"],
     "exclude": [
