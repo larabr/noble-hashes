@@ -1,3 +1,3 @@
-declare const globalThis: Record<string, any> | undefined;
+import * as nc from 'node:crypto';
 export const crypto =
-  typeof globalThis === 'object' && 'crypto' in globalThis ? globalThis.crypto : undefined;
+  nc && typeof nc === 'object' && 'webcrypto' in nc ? nc.webcrypto : undefined;
