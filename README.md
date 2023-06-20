@@ -1,5 +1,10 @@
 # noble-hashes ![Node CI](https://github.com/paulmillr/noble-hashes/workflows/Node%20CI/badge.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+> This fork adds support for legacy browsers without BigInt (e.g. Safari 13 or less), and only includes hash algorithms needed by openpgpjs: SHA1, SHA2, SHA3, RIPEMD.<br>
+We recommend you use the upstream repo. The rest of the README refers to the upstream library.
+
+<hr>
+
 Audited & minimal JS implementation of SHA2, SHA3, RIPEMD, BLAKE2/3, HMAC, HKDF, PBKDF2 & Scrypt.
 
 - **noble** family, zero dependencies
@@ -33,7 +38,7 @@ The library's initial development was funded by [Ethereum Foundation](https://et
 
 Browser, deno and node.js are supported:
 
-> npm install @noble/hashes
+> npm install @openpgp/noble-hashes
 
 For [Deno](https://deno.land), use it with npm specifier.
 In browser, you could also include the single file from
